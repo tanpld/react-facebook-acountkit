@@ -83,7 +83,7 @@ class AccountKit extends React.Component {
       options.phoneNumber = this.props.phoneNumber
     }
     if (window.AccountKit !== undefined) {
-      window.AccountKit.login('PHONE', options, res => this.onResponse(res))
+      window.AccountKit.login('PHONE', options, res => onResponse(res))
     }
   }
 
